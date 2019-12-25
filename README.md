@@ -11,4 +11,4 @@ The following are more efficient implementations of Secret Sharing, but require 
 * http://point-at-infinity.org/ssss/
 * http://manpages.ubuntu.com/manpages/disco/en/man7/gfshare.7.html
 
-[Stack Exchange Question 83897](https://security.stackexchange.com/questions/83897/shamirs-secret-sharing-scheme-how-standardised) points out the problems using these to reconstruct a secret and implicity points out the advantages of using a very simple reconstruction process.
+[Stack Exchange Question 83897](https://security.stackexchange.com/questions/83897/shamirs-secret-sharing-scheme-how-standardised) points out the problems using these to reconstruct a secret and implicity points out the advantages of using a very simple reconstruction process.  The [Key distribution](https://en.wikipedia.org/wiki/Key_distribution) wikipedia entry explicitly points out an advantage of using Secret Sharing with asymmetric cryptography.
