@@ -7,13 +7,18 @@ Simple implementation of Secret Sharing using asymmetric cryptography
 
 ## Usage Examples
 
-//before running, ensure the following has been run:// `export GPG_TTY=$(tty)`
-Waiting on this to unblock: https://bitbucket.org/vinay.sajip/python-gnupg/issues/129/issue-generating-keys
-
 ### Shell
 
 ```
 usage: simpleSecretSharing.py <pathToSecret> <N> <k> <pathToNewOutputDir>
+
+simpleSecretSharing implements simple Secret Sharing using asymmetric cryptography
+
+Parameters:
+	pathToSecret (str): absolute path to the secret file (<10000 bytes)
+	N (int): number of shares (<7)
+	k (int): number of shares to reconstruct secret (<4)
+	pathToNewOutputDir (str): absolute path to the output directory.  Must not already exist
 ```
 
 Example:

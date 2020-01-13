@@ -1,6 +1,14 @@
 #!/usr/bin/env python3.7
 '''
 usage: simpleSecretSharing.py <pathToSecret> <N> <k> <pathToNewOutputDir>
+
+simpleSecretSharing implements simple Secret Sharing using asymmetric cryptography
+
+Parameters:
+	pathToSecret (str): absolute path to the secret file (<10000 bytes)
+	N (int): number of shares (<7)
+	k (int): number of shares to reconstruct secret (<4)
+	pathToNewOutputDir (str): absolute path to the output directory.  Must not already exist
 '''
 
 import docopt
@@ -25,7 +33,7 @@ def simpleSecretSharing(pathToSecret, N, k, pathToNewOutputDir):
 		pathToNewOutputDir (str): absolute path to the output directory.  Must not already exist
 	
 	Returns:
-		tuple.  The first value is abc...	
+		A list of the files created, both encryptedSecrets and secretShares
 	'''
 	
 	## validate input
